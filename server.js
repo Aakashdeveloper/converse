@@ -10,7 +10,7 @@ commanRouter.route('/hi')
 });
 commanRouter.route('/needaccess')
     .get(function(req,res){
-        res.send({"response":'Please select the app'});        
+        res.send({"response":"Please select the app <button value='tm1' name='tm1'>Tm1</button>  <button value='axp_im' name='axp_im'>Axp_im</button>"});        
 });
 
 app.use('/converse', commanRouter);
