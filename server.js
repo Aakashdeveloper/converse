@@ -11,18 +11,6 @@ app.get('/converse/hi', function(req,res){
     res.send({"response":'hello welcome to fin bot'});
     
 })
-app.get('/converse/need%20access', function(req,res) {
-    fs.readFile('response1.txt',function(err,data){
-        if(err) throw err;
-        res.send(data)
-    })
-})
-app.get('/converse/needaccess', function(req,res){
-    fs.readFile('response1.txt',function(err,data){
-        if(err) throw err;
-        res.send(JSON.parse(data));
-    })
-})
 
 app.listen(port,function(err){
     if(err) throw err;
